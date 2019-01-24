@@ -13,7 +13,7 @@ public abstract class Ticket {
         return "Number: " + serialNumber + "\nPrice: " + getPrice();
     }
 
-    private static int getNextSerialNumber() {
-        return getNextSerialNumber()+1;
+    private int getNextSerialNumber() {
+        return serialNumber + 1;
     }
 }
